@@ -7,6 +7,6 @@ creado en P5JS incluyendo minimo 9 estados.
 
 ## Proceso
 
-![storyboard](./img/STORYBOARD.jpg).
+![storyboard](./img/storyboard-1.jpg).
 
-![storyboard](./img/STORYBOARD2.jpg).
+![storyboard](./img/storyboard-2.jpg).

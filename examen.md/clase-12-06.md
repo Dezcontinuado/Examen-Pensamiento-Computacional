@@ -1,3 +1,3 @@
 ## Proceso
 
-![storyboard](URL_de_la_imagen)
+![storyboard](storyboard.md/storyboard-1.png)

@@ -1,4 +1,4 @@
 # Proceso de guión visual
 
-![storyboard](../imagenes/STORYBOARD.jpg)
+![storyboard](../imagenes/STORYBOARD3.jpg)
 

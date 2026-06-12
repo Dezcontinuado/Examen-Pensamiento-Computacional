@@ -1,3 +1,3 @@
-Proceso de guión visual
+# Proceso de guión visual
 
 ![storyboard](../imagenes/STORYBOARD.jpg)

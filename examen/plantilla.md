@@ -31,7 +31,13 @@ aki.....
 El proyecto está inspirado en la película de Alicia en el país de las maravillas. Nuestro proyecto 
 comienza con Alicia junto al Conejo blanco. Al precionar la barra espaciadora el conejo desaparece y
 alicia comienza a caer. Al finalizar la caída, el usuario debe utilizar el "scroll" lo que genera una 
-imagen de alicia de espaldas  y frente a una mesa. Luego al presionar TAB, se genera 
+imagen de alicia grande, de espaldas y frente a una mesa. Luego al presionar TAB, se genera
+una alicia pequeña y la mesa desaparece. Continuamos haciendo "click" y alicia se vuelve pequeña,
+y entra el cerrojo a la escena, contuniamos apretado la letra "A" lo que hace que el
+cerrojo desaparezca y entren tazas y teteras de té volando al rededor de alicia. Seguimos 
+presionando la letra "L", lo quegenera varias imagenes del gato sonriente, en distintas 
+partes del canva. Continuamos presionando la letras "I" 
+
 
 
 ### Storyboard

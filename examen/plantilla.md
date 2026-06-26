@@ -54,18 +54,97 @@ aki...
 
 #### Estado 1
 
+En el primer estado Alicia observa al Conejo blanco pasar frente a ella.
+
+Al apretar la barra espaciadora, alicia empieza a caer.
+
+```js
+codigo aqui entremedio 
+```
+
 #### Estado 2
+
+Cuando la caída termina el usuario deberá hacer "Scroll", lo que muestra 
+una Alicia grande e inicia el siguiente estado.
+
+```js
+codigo aqui entremedio
+
+```
 
 #### Estado 3
 
+Alicia grande aparece frente a una mesa, ambos elementos se desplazan hasta su 
+posición final.  
+
+Al apretar "TAB" Alicia se hace pequeña y la mesa desaparece.
+
+```js
+el codigo aqui entremedio
+
+```
+
 #### Estado 4
+
+La mesa desaparece de la pantalla y cuando esto ocurre hay que presionar "Click".
+
+Lo que genera el cambio de escena y aparece el cerrojo.
+
+```js
+codigo aqui entremedio
+```
 
 #### Estado 5
 
+Alicia aparece frente al cerrojo y es pequeña.
+
+Presionar la letra "A" aparecen las tazas y teteras.
+
+```js
+codigo aqui entremedio
+
+```
+
 #### Estado 6
+
+Las tazas y teteras se desplazan horizontalmente por la pantalla hasta desaparecer.
+
+Presionar "L" da inicio a la escena del gato
+
+```js
+poner codigo aqui
+
+```
 
 #### Estado 7
 
+EL gato sonriente aparece y desaparece en distintas partes de la pantalla.
+
+Presionar "I" lo que da inicio a la escena de las rosas
+
+```js
+codigo aqui
+
+```
+
 #### Estado 8
 
-#### Estado 10
+Aparecen rosas rosas y blancas alrededor de Alicia.
+
+Presionar "C" para que aparezcan las cartas.
+
+```js
+codigo aqui
+
+```
+
+#### Estado 9
+
+Las cartas avanzan desde los extramos de la pantalla hasta llegar a alicia.
+
+Presionar "E" para finalizar el proyecto con la aparición del reloj del Conejo blanco.
+
+```js
+codigo aqui
+
+```

@@ -20,7 +20,7 @@ Romina Inostroza. (Dezcontinuado)
 
 José Bravo. (Eiivor07)
 
-Renata Danyan. rreniss
+Renata Danyan. (rreniss)
 
 ### Enlace p5.js
 

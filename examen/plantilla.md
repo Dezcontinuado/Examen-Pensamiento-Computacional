@@ -2,7 +2,7 @@
 (link aki)
 ### Título del proyecto
 
-"ALICE"
+"ALICE EN INTERNET"
 
 ### Referencia de origen/ bibliografía
 
@@ -16,9 +16,9 @@ puede ser un fotograma de toda la interacción
 
 ### Integrantes 
 
-Romina Inostroza. (usuario github)
+Romina Inostroza. (Dezcontinuado)
 
-José Bravo. (usuario githubbb)
+José Bravo. (Eiivor07)
 
 Renata Danyan. rreniss
 

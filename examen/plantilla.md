@@ -1,5 +1,5 @@
 ## Link web pública
-(link aki)
+[Link web](https://dezcontinuado.github.io/Examen-Pensamiento-Computacional/)
 ### Título del proyecto
 
 "ALICE EN INTERNET"
@@ -17,15 +17,15 @@ Direccion: Clyde Geronimi, Wilfred Jackson y Hamilton Luske.
 
 ### Integrantes 
 
-Romina Inostroza. (Dezcontinuado)
+Romina Inostroza. [dezcontinuado]
 
-José Bravo. (Eiivor07)
+José Bravo. [Eiivor07]
 
-Renata Danyan. (rreniss)
+Renata Danyan. [rreniss]
 
 ### Enlace p5.js
 
-https://editor.p5js.org/josebravogranja2007/sketches/fAS948Mqs
+[p5js](https://editor.p5js.org/josebravogranja2007/sketches/fAS948Mqs)
 
 ### Relato inicial
 

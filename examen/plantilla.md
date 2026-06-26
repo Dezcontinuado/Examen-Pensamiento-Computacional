@@ -12,7 +12,7 @@ Direccion: Clyde Geronimi, Wilfred Jackson y Hamilton Luske.
 
 ### Imagen de referencia de proyecto
 
-![FOTOGRAMA](../imagenes/FOTOGRAMA.jpg)
+![FOTOGRAMA](../imagenes/FOTOGRAMA.jng)
 
 
 ### Integrantes 

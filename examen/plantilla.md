@@ -36,7 +36,7 @@ una alicia pequeña y la mesa desaparece. Continuamos haciendo "click" y alicia 
 y entra el cerrojo a la escena, contuniamos apretado la letra "A" lo que hace que el
 cerrojo desaparezca y entren tazas y teteras de té volando al rededor de alicia. Seguimos 
 presionando la letra "L", lo quegenera varias imagenes del gato sonriente, en distintas 
-partes del canva. Continuamos presionando la letras "I" 
+partes del canva. Continuamos presionando la letras "I" lo que nos lleva a la escena de alicia con as rosas blancas y rojas; seguimos con la letras "C" lo que genera que desaparezcan las rosas y entren las cartas. Para finalizar presionamos la letras "E" lo que finaliza la historia con un reloj.
 
 
 

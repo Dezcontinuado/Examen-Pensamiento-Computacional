@@ -48,7 +48,7 @@ blanco cerrando el recorrido por escenas icónicas de la película.
 
 ### Storyboard
 
-aki...
+![storyboard](../imagenes/STORYBOARD3.jpg)
 
 ### Estados 
 

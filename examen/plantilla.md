@@ -28,16 +28,22 @@ aki.....
 
 ### Relato inicial
 
-El proyecto está inspirado en la película de Alicia en el país de las maravillas. Nuestro proyecto 
-comienza con Alicia junto al Conejo blanco. Al presionar la barra espaciadora el conejo desaparece y
-alicia comienza a caer. Al finalizar la caída, el usuario debe utilizar el "scroll" lo que genera una 
-imagen de alicia grande, de espaldas y frente a una mesa. Luego al presionar TAB, se genera
-una alicia pequeña y la mesa desaparece. Continuamos haciendo "click" y alicia se vuelve pequeña,
-y entra el cerrojo a la escena, contuniamos apretado la letra "A" lo que hace que el
-cerrojo desaparezca y entren tazas y teteras de té volando al rededor de alicia. Seguimos 
-presionando la letra "L", lo quegenera varias imagenes del gato sonriente, en distintas 
-partes del canva. Continuamos presionando la letras "I" lo que nos lleva a la escena de alicia con as rosas blancas y rojas; seguimos con la letras "C" lo que genera que desaparezcan las rosas y entren las cartas. Para finalizar presionamos la letras "E" lo que finaliza la historia con un reloj.
+El proyecto consiste en una reinterpretación interactiva de la película Alicia en el país de las 
+maravillas (1951), donde el usuario avanzará por distintas escenas mediante una serie de interacciones.
+El proyecto comienza con Alicia junto al Conejo blanco, mientras este atraviesa la pantalla. Cuando 
+el conejo desaparece el usuario debe presiona la "Barra espaciadora" para inciar la caida de alicia.
+Cuado finalice la caída el usuario deberá utilizar el "Scroll" paara iniciar la siguiente
+escena, en la que Alicia crece y aparece de espaldas junto a una mesa. Después al presionar 
+la tecla "TAB" Alicia se hace pequeña y la mesa desaparece. Continuamos haciendo "CLcik", lo que
+genera un cerrojo grande en la escena.
 
+Nuestro proyecto continua utilizando las letras que forman el nombre "ALICE", la letras "A" genera
+la escena donde alicia se encuentra con tazas y teteras a su alrededor, seguido de la letras "L" 
+que hace aparecer al gato sonriente, este aparece y desaparece en distintos lugares del
+canva. Seguimos con la letras "I" que genera el escenario de alicia en el jardín de rosas rojas
+y blancas. Luego la letra "C" introduce las cartas de la reina de corazones, que van rodeando a Alicia.
+Y para finalizar nuestro proyecto, presionamos la letras "E" la cual introduce el reloj del Conejo 
+blanco cerrando el recorrido por escenas icónicas de la película.
 
 
 ### Storyboard

@@ -12,7 +12,8 @@ Direccion: Clyde Geronimi, Wilfred Jackson y Hamilton Luske.
 
 ### Imagen de referencia de proyecto
 
-puede ser un fotograma de toda la interacción
+![FOTOGRAMA](../imagenes/FOTOGRAMA.jpg)
+
 
 ### Integrantes 
 
@@ -59,16 +60,44 @@ En el primer estado Alicia observa al Conejo blanco pasar frente a ella.
 Al apretar la barra espaciadora, alicia empieza a caer.
 
 ```js
-codigo aqui entremedio 
+function dibujarEtapa1() {
+ dibujarAlicia(aliciaX, aliciaY, 250, "frente");
+ //pregunta si el conejo au no atraveso la pantalla
+ if (conejoX < width + 100) {
+ conejoX += 4; // si es verdad lo mueve, este sirve para el
+desplazamiento del conejo y su velocidad
+ dibujarConejo(conejoX, conejoY);
+} else {
+ mostrarTextoIndicador("Presiona ESPACIO", width / 2, 50);
+  }
+ } function keyPressed() {
+ if (etapa === 1 && keyCode === 32 && conejoX >= width + 100) {
+inicializarEtapa(2); }
+ }
 ```
 
 #### Estado 2
 
-Cuando la caída termina el usuario deberá hacer "Scroll", lo que muestra 
-una Alicia grande e inicia el siguiente estado.
+Cuando la caída termina el usuario deberá hacer "Scroll", 
+lo que muestra una Alicia grande e inicia el siguiente estado.
 
 ```js
-codigo aqui entremedio
+function dibujarEtapa2() {
+ dibujarAlicia(aliciaX, aliciaY, 250, "caida");
+if (aliciaY < height + 100) {
+mostrarTextoIndicador("Usa la RUEDA DEL MOUSE (Scroll) para caer", width / 2, 50);
+ } else {
+inicializarEtapa(3);
+ }
+}
+function mouseWheel(event) {
+if (etapa === 2) {
+if (event.delta > 0) {
+aliciaY += 15;
+}
+return false;
+ }
+}
 
 ```
 
@@ -80,7 +109,19 @@ posición final.
 Al apretar "TAB" Alicia se hace pequeña y la mesa desaparece.
 
 ```js
-el codigo aqui entremedio
+function dibujarEtapa3() {
+if (aliciaX > width * 0.35) aliciaX -= 2;
+ if (mesaX < width * 0.65) mesaX += 3.5;
+dibujarMesa(mesaX, mesaY, 200);
+dibujarAlicia(aliciaX, aliciaY, aliciaW, "espalda");
+
+if (aliciaX <= width * 0.35 && mesaX >= width * 0.65) {
+ mostrarTextoIndicador("Presiona TAB", width / 2, 50);
+ }
+}
+else if (etapa === 3 && keyCode === TAB && aliciaX <= width * 0.36 && mesaX >= width * 0.64) {
+ inicializarEtapa(4);
+return false;
 
 ```
 
@@ -91,7 +132,23 @@ La mesa desaparece de la pantalla y cuando esto ocurre hay que presionar "Click"
 Lo que genera el cambio de escena y aparece el cerrojo.
 
 ```js
-codigo aqui entremedio
+function dibujarEtapa4() {
+
+if (mesaX < width + 200) {
+ mesaX += 5;
+} else {
+ mostrarTextoIndicador("Presiona CLICK en la pantalla", width / 2, 50);
+}
+ dibujarMesa(mesaX, mesaY, 200);
+dibujarAlicia(aliciaX, height * 0.65, aliciaW, "perfil");
+ }
+
+function mousePressed() {
+if (etapa === 4 && mesaX >= width + 190) {
+ inicializarEtapa(5);
+ }
+}
+
 ```
 
 #### Estado 5
@@ -101,7 +158,20 @@ Alicia aparece frente al cerrojo y es pequeña.
 Presionar la letra "A" aparecen las tazas y teteras.
 
 ```js
-codigo aqui entremedio
+function dibujarEtapa5() {
+ dibujarAlicia(aliciaX, aliciaY, 180, "chica");
+
+if (cerrojoY < height * 0.5) {
+ cerrojoY += 3;
+} else {
+ mostrarTextoIndicador("Presiona A", width / 2, 50);
+}
+ dibujarCerrojo(width * 0.6, cerrojoY, 300);
+}
+else if (etapa === 5 && (key === 'A' || key === 'a') && cerrojoY >= height * 0.49) {
+inicializarEtapa(6);
+ }
+
 
 ```
 
@@ -112,7 +182,34 @@ Las tazas y teteras se desplazan horizontalmente por la pantalla hasta desaparec
 Presionar "L" da inicio a la escena del gato
 
 ```js
-poner codigo aqui
+function dibujarEtapa6() {
+ dibujarAlicia(aliciaX, aliciaY, 180, "chica");
+
+let todosFuera = true;
+
+for (let item of elementosTe) {
+ item.x += item.velocidad;
+
+if (item.tipo === 'tetera') {
+  image(imgTetera, item.x, item.y, 60, 60);
+ } else {
+  image(imgTaza, item.x, item.y, 45, 45);
+}
+ if (item.x < width + 50) todosFuera = false;
+ }
+
+if (todosFuera) {
+ mostrarTextoIndicador("Presiona L", width / 2, 50);
+ }
+}
+else if (etapa === 6 && (key === 'L' || key === 'l')) {
+ let listos = true;
+ for(let item of elementosTe) {
+  if(item.x < width + 50) listos = false;
+}
+
+if(listos) inicializarEtapa(7);
+ }
 
 ```
 
@@ -123,7 +220,32 @@ EL gato sonriente aparece y desaparece en distintas partes de la pantalla.
 Presionar "I" lo que da inicio a la escena de las rosas
 
 ```js
-codigo aqui
+function dibujarEtapa7() {
+ dibujarAlicia(aliciaX, aliciaY, 180, "chica");
+
+if (gatoContador < 10) {
+ gatoTimer += deltaTime;
+
+gatoAlpha = sin(map(gatoTimer, 0, 1500, 0, PI)) * 255;
+
+push();
+ tint(255, gatoAlpha);
+image(imgGato, gatoX, gatoY, 120, 120);
+ pop();
+
+if (gatoTimer >= 1500) {
+gatoTimer = 0;
+gatoContador++;
+ cambiarGatoPosicion();
+ }
+} else {
+ mostrarTextoIndicador("Presiona I", width / 2, 50);
+ }
+}
+
+else if (etapa === 7 && (key === 'I' || key === 'i') && gatoContador >= 10) {
+ inicializarEtapa(8);
+}
 
 ```
 
@@ -134,8 +256,27 @@ Aparecen rosas rosas y blancas alrededor de Alicia.
 Presionar "C" para que aparezcan las cartas.
 
 ```js
-codigo aqui
+function dibujarEtapa8() {
 
+for(let r of rosas) {
+ push();
+ translate(r.x, r.y);
+ r.rot += r.velRot;
+ rotate(r.rot);
+dibujarRosa(0, 0, 60, r.tipo);
+pop();
+}
+
+dibujarAlicia(aliciaX, aliciaY, 180, "chica");
+
+if (millis() - rosasTimer > 10000) {
+ mostrarTextoIndicador("Presiona C", width / 2, 50);
+ }
+}
+
+else if (etapa === 8 && (key === 'C' || key === 'c') && (millis() - rosasTimer > 10000)) {
+ inicializarEtapa(9);
+}
 ```
 
 #### Estado 9
@@ -145,6 +286,14 @@ Las cartas avanzan desde los extramos de la pantalla hasta llegar a alicia.
 Presionar "E" para finalizar el proyecto con la aparición del reloj del Conejo blanco.
 
 ```js
-codigo aqui
+function dibujarEtapa9() {
+ dibujarGuardias(width / 2, height / 2, 750);
+
+mostrarTextoIndicador("Presiona E", width / 2, 50);
+}
+
+else if (etapa === 9 && (key === 'E' || key === 'e')) {
+  inicializarEtapa(10);
+}
 
 ```

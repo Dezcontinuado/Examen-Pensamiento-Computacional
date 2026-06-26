@@ -2,7 +2,7 @@
 [Link web](https://dezcontinuado.github.io/Examen-Pensamiento-Computacional/)
 ### Título del proyecto
 
-"ALICE EN INTERNET"
+"ALICE EN EL EXAMEN"
 
 ### Referencia de origen/ bibliografía
 

@@ -17,11 +17,11 @@ Direccion: Clyde Geronimi, Wilfred Jackson y Hamilton Luske.
 
 ### Integrantes 
 
-Romina Inostroza. [dezcontinuado]
+Romina Inostroza. [dezcontinuado](https://github.com/Dezcontinuado)
 
-José Bravo. [Eiivor07]
+José Bravo. [Eiivor07](https://github.com/Eiivor07)
 
-Renata Danyan. [rreniss]
+Renata Danyan. [rreniss](https://github.com/rreniss)
 
 ### Enlace p5.js
 
